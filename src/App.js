@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+// import { getDatabase , ref , set } from "firebase/database";
+// import { getAuth ,createUserWithEmailAndPassword } from "firebase/auth";
+// import { app } from "./firebase";
 import './App.css';
+import  SignupPage  from "./pages/Signup.jsx"
 
-function App() {
+// const auth = getAuth(app);
+
+function App(){
+  // const signupUser = () =>{
+  //   createUserWithEmailAndPassword(auth,"aadilgani2001@gmail.com","Cmrit#123")
+  //   .then((value)=>console.log(value));
+  // };
+
+// const db = getDatabase(app);
+
+// function App() {
+
+//   const putData = () => {
+//     set(ref(db,'users/aadil'),{
+//       id:1,
+//       name:"Aadil Gani",
+//       age:21,
+//     })
+//   }
+  // return (
+  //   <div className="App">
+  //     <h1>Firebase React App</h1>
+  //     <button onClick={putData}>Put Data</button>
+  //   </div>
+  // );
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <h1>Firebase React App</h1>
+      <button onClick={ signupUser }>Create User</button> */}
+
+      <SignupPage />
+
     </div>
   );
 }
